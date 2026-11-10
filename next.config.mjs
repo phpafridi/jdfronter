@@ -5,6 +5,7 @@ export default {
   // Old .html URLs keep working (SEO / bookmarks)
   async redirects() {
     return [
+      { source: "/sitemap", destination: "/sitemap.xml", permanent: true },
       ...aboutSubpages.map((source) => ({ source, destination: "/about-us", permanent: true })),
       ...removed.map((source) => ({ source, destination: "/", permanent: true })),
       { source: "/index.html", destination: "/", permanent: true },
