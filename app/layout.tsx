@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "JD Frontier | Authorised Jiadi Dealer in Pakistan",
   description: "JD Frontier is the authorised Jiadi dealer in Pakistan, importing genuine water submersible pumps from China. City Saddar Road, Rawalpindi. Call 051-5553023.",
   applicationName: "JD Frontier",
-  verification: { google: "tuT7COCXuKv8_1X7q9NVqTFVg-lCOx0VYhMbtQBKX5I" },
+  verification: { google: "UvW98CTME1sd2-WzNMBU7n3OmiJhoBl-XEvPzeTqbgc" },
 };
 
 const LOCAL_BUSINESS = {
