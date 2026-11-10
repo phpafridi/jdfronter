@@ -2,13 +2,12 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import "./jdf.css";
 
-// TODO: set to your real domain
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.jdfrontier.com"),
+  metadataBase: new URL("https://jdfrontierltd.com"),
   title: "JD Frontier | Authorised Jiadi Dealer in Pakistan",
   description: "JD Frontier is the authorised Jiadi dealer in Pakistan, importing genuine water submersible pumps from China. City Saddar Road, Rawalpindi. Call 051-5553023.",
   applicationName: "JD Frontier",
-  verification: { google: "UvW98CTME1sd2-WzNMBU7n3OmiJhoBl-XEvPzeTqbgc" },
+  verification: { google: ["UvW98CTME1sd2-WzNMBU7n3OmiJhoBl-XEvPzeTqbgc", "tuT7COCXuKv8_1X7q9NVqTFVg-lCOx0VYhMbtQBKX5I"] },
 };
 
 const LOCAL_BUSINESS = {
