@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next";
-import { allSlugs } from "@/lib/pages";
+import { SITE, categoryBySlug, products } from "@/lib/site";
 
-// TODO: set to your real domain
-const BASE = "https://www.jdfrontier.com";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return allSlugs().map((s) => ({ url: `${BASE}/${s.join("/")}` }));
+  const pages = ["", "/about-us", "/products", "/production-equipment", "/contact-us"];
+  return [
+    ...pages.map((p) => ({ url: SITE.url + p, priority: p === "" ? 1 : 0.8 })),
+    ...Object.keys(categoryBySlug).map((s) => ({ url: `${SITE.url}/${s}`, priority: 0.7 })),
+    ...Object.keys(products).map((s) => ({ url: `${SITE.url}/${s}`, priority: 0.6 })),
+  ];
 }
